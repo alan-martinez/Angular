@@ -6,10 +6,13 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "heroku-postbuild": "ng build"
   },
   "private": true,
   "dependencies": {
+    "node": "~16.13.2",
+    "npm": "~8.5.0",
     "@angular/animations": "^15.0.0",
     "@angular/common": "^15.0.0",
     "@angular/compiler": "^15.0.0",
@@ -21,12 +24,11 @@
     "angular-in-memory-web-api": "^0.14.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.12.0",
-    "node": "~16.13.2"
+    "zone.js": "~0.12.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^15.0.0",
-    "@angular/cli": "~15.0.0",
+    "@angular/cli": "^15.0.0",
     "@angular/compiler-cli": "^15.0.0",
     "@types/jasmine": "~4.3.0",
     "jasmine-core": "~4.5.0",
